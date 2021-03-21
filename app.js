@@ -20,8 +20,11 @@ app.use(function (req, res, next) {
 });
 
 require('./Router/userRouter')(app);
-app.listen(process.env.PORT || 8080, console.log('app started'));
+const port = process.env.PORT || 3000
 
+app.listen(port, () => {
+console.log(`Example app listening on port ${port}!`)
+})
 module.export = {
     app: app
 };
