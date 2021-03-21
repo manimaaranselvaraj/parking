@@ -1,0 +1,8 @@
+version: 0.0
+os: linux 
+files :
+    - source: /
+      destination: /home/mani_maran/parking
+hooks:
+  AfterInstall:
+  - location: scripts/appstart.sh
