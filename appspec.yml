@@ -6,3 +6,4 @@ files :
 hooks:
   AfterInstall:
   - location: scripts/appstart.sh
+    runas: root
